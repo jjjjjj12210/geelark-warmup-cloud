@@ -25,7 +25,7 @@ def target_hour(day: str) -> int:
 
 if __name__ == "__main__":
     now = datetime.now(timezone.utc)
-    hour = 13  # ВРЕМЕННО: ручной тест Drive-обмена 14.09, вернуть до конца дня
+    hour = target_hour(now.date().isoformat())
     if now.hour == hour:
         print(f"сегодняшний час настал: {hour:02d}:00 UTC")
         sys.exit(0)
