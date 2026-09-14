@@ -1,0 +1,9 @@
+.env
+proxies.txt
+accounts.csv
+accounts_registry.xlsx
+__pycache__/
+*.pyc
+logs/
+.venv-adb/
+fleet.json
